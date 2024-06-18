@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonders</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Wond<span>ers.</span></a>
+    <div class="navbar-nav">
+      <!-- <a href="#" class="navbar-logo">Saa<span>Florist.</span></a> -->
+      <a href="#home">Home</a>
+      <a href="#about">Latar Belakang</a>
+      <a href="#galeri">Isi</a>
+      <a href="#contact">Kontak</a>
+      <a href="about.html">Tentang Kami</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="https://wa.me/+6283894547318" target="_blank" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Search Form -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Cari...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Wisata Virtual, <span>Pengalaman Nyata</span></h1>
+      <p>Selamat datang di Wonders - Wonderful Explorers! Membawa Anda langsung ke destinasi yang menakjubkan dari kenyamanan rumah Anda. Temukan dunia baru dengan cara yang inovatif bersama kami.</p>
+      <a href="https://wa.me/+6283894547318" class="cta">Pesan Sekarang</a>
+    </main>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2><span>Latar</span> Belakang</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/vr1.jpg" alt="Tentang Kami">
+      </div>
+      <div class="content">
+        <h3>Kenapa dengan Wonders?</h3>
+        <p>Kami adalah pelopor dalam menyajikan pengalaman wisata virtual melalui VR dan AR. Dengan tujuan untuk memungkinkan akses global ke keindahan alam dan kekayaan budaya Indonesia, kami menawarkan tur virtual 360 derajat yang mendetail dan mendalam. Kolaborasi dengan pakar lokal dan global memastikan kami menyajikan pengalaman yang berharga dan mendidik, sambil berkontribusi pada pelestarian warisan budaya dan lingkungan. Melalui teknologi canggih, kami berusaha menghubungkan orang-orang dari berbagai belahan dunia dengan destinasi yang mungkin sulit dijangkau secara langsung. Setiap tur dirancang untuk memberikan wawasan mendalam dan apresiasi yang lebih besar terhadap keanekaragaman Indonesia. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Section -->
+  <section class="galeri" id="galeri">
+    <h2><span>Galeri</span> Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestias voluptatibus a asperiores modi magnam. Et temporibus esse cum ipsam repellat, voluptas, unde eveniet similique suscipit fugit modi odio recusandae ducimus officiis autem deserunt id nobis. Reiciendis ipsum provident neque dicta, iure assumenda odio numquam animi maiores nam veniam soluta harum delectus alias omnis beatae illum deserunt ut labore tempore incidunt. Delectus corporis quidem quae? Animi, iste quo doloribus beatae laudantium amet maiores deleniti perspiciatis inventore reprehenderit, a sed itaque quibusdam! Possimus, ut quo ipsam asperiores tempore voluptatibus! Sed eos minus et ipsum. At eius necessitatibus ratione cupiditate non labore!</p>
+    <video autoplay muted loop id="video-bg">
+      <source src= "img/Wonderful.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="about-us">
+      <h1><span>Tentang</span> Kami</h1>
+      <div class="slider">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <div class="slide" id="slide-container">
+              <div class="member">
+                  <img src="img/zacky.jpeg" alt="Foto 1">
+                  <div class="info">
+                      <h2>Muhammad Zacky Alghifari</h2>
+                      <h4>I.2310702</h4>
+                  </div>
+              </div>
+              <div class="member">
+                  <img src="img/syahrul2.jpeg" alt="Foto 2">
+                  <div class="info">
+                      <h2>Muhammad Syahrullah NS</h2>
+                      <h4>I.2310</h4>
+                  </div>
+              </div>
+              <div class="member">
+                  <img src="img/dzikri.jpeg" alt="Foto 4">
+                  <div class="info">
+                      <h2>M. Dzikri Ramdhani</h2>
+                      <h4>I.2310593</h4>
+                  </div>
+              </div>
+              <div class="member">
+                  <img src="img/hilmi.jpg" alt="Foto 5">
+                  <div class="info">
+                      <h2>Hilmi Ahmad Kamil</h2>
+                      <h4>NOMOR INDUK 2</h4>
+                  </div>
+              </div>
+              <!-- Tambahkan lebih banyak anggota sesuai kebutuhan -->
+          </div>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="https://instagram.com/saa.florist_" target="_blank"><i data-feather="instagram"></i></a>
+      <a href="https://wa.me/+6283894547318" target="_blank"><i data-feather="phone-call"></i></a>
+      <a href="https://shp.ee/ed9yfhi" target="_blank"><i data-feather="shopping-cart"></i></a>
+    </div>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#contact">Kontak</a>
+    </div>
+    <div class="credit">
+      <p>Created by <a href="https://instagram.com/_alghifaarii_" target="_blank">ZckyAlGhfri</a> | Copyright &copy;
+        2023 Saa Florist</p>
+    </div>
+  </footer>
+
+  <!-- Java Script -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
