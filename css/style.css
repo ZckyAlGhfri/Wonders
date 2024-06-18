@@ -555,9 +555,146 @@ footer .credit a {
 }
 
 
+/* Tablet dan Mobile */
+@media (max-width: 1024px) {
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    transition: 0.6s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  .navbar .search-form input {
+    font-size: 1.2rem;
+  }
+
+  .hero .content h1 {
+    font-size: 4rem;
+  }
+
+  .hero .content p {
+    font-size: 1.6rem;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.4rem;
+  }
+
+  .galeri p,
+  .contact p {
+    font-size: 1.4rem;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 35rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+
+  .member img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* Mobile */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+
+  .hero .content h1 {
+    font-size: 3rem;
+  }
+
+  .hero .content p {
+    font-size: 1.4rem;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 1.6rem;
+  }
+
+  .about .row .content h3 {
+    font-size: 1.8rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.2rem;
+  }
+
+  .galeri p,
+  .contact p {
+    font-size: 1.2rem;
+  }
+
+  .contact .row form .input-group input {
+    font-size: 1rem;
+  }
+
+  .contact .row form .btn {
+    font-size: 1.4rem;
   }
 }
