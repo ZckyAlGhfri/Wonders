@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonders</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Wond<span>ers.</span></a>
+    <div class="navbar-nav">
+      <a href="#home">Beranda</a>
+      <a href="#about">Deskripsi</a>
+      <a href="#latar">Latar</a>
+      <a href="#galeri">Fitur</a>
+      <a href="#contact">Tentang</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="https://wa.me/+6283168283392" target="_blank" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Search Form -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Cari...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Wisata Virtual, <span>Pengalaman Nyata</span></h1>
+      <p>Selamat datang di Wonders - Wonderful Explorers! Membawa Anda langsung ke destinasi yang menakjubkan dari kenyamanan rumah Anda. Temukan dunia baru dengan cara yang inovatif bersama kami.</p>
+      <!-- <a href="https://wa.me/+6283168283392" class="cta">Pesan Sekarang</a> -->
+    </main>
+  </section>
+  
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>Apa itu <span>Wonders</span>?</h2>
+    
+    <div class="row">
+      <div class="content1">
+        <p>Wisata Virtual Budaya dan Sejarah adalah layanan tur virtual yang memanfaatkan teknologi Virtual Reality (VR) untuk membawa wisatawan dalam perjalanan eksplorasi budaya dan sejarah Indonesia tanpa harus meninggalkan rumah mereka. Dengan tur ini, pengguna bisa merasakan pengalaman yang mendalam dan interaktif mengenai berbagai destinasi bersejarah, cagar budaya, dan tradisi lokal melalui perangkat VR</p>
+        </div>
+      <div class="about-img">
+        <img src="img/vr2.jpg" alt="Tentang Kami">
+      </div>
+      </div>
+    </section>
+    
+  <!-- Latar Section -->
+  <section class="about" id="latar">
+    <h2><span>Latar</span> Belakang</h2>
+    
+    <div class="row">
+      <div class="about-img">
+        <img src="img/vr1.jpg" alt="Tentang Kami">
+      </div>
+      <div class="content2">
+       <p>1. <b>Pengalaman Digital:</b> Dengan kemajuan teknologi, semakin banyak orang yang mencari pengalaman digital yang mendalam dan edukatif. Tur virtual dapat menarik minat para wisatawan yang tech-savvy.<br>
+          2. <b>Pelestarian Budaya & Sejarah:</b> Banyak situs bersejarah dan budaya yang tidak mudah diakses atau rentan terhadap kerusakan. Wisata virtual membantu melestarikan dan menyebarkan pengetahuan tentang warisan budaya dan sejarah Indonesia ke audiens yang lebih luas.<br>
+          3. <b>Dukungan Pemerintah:</b> Pemerintah Indonesia terus mendorong inovasi di sektor pariwisata, termasuk pengembangan pariwisata digital. Menjadikan kesempatan untuk kolaborasi dengan berbagai pihak.<br>
+          4. <b>Kesadaran Lingkungan:</b> Tur virtual mengurangi dampak lingkungan yang biasanya dihasilkan dari perjalanan fisik, seperti emisi karbon dari transportasi.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Fitur Section -->
+  <section class="galeri" id="galeri">
+    <h2>Apa Yang Kami <span>Tawarkan</span>?</h2>
+    <p>"<b>Wonders</b> menghadirkan pengalaman wisata digital yang memukau melalui fitur-fitur utama seperti <b>Tur Virtual 360 Derajat</b> yang memberikan pandangan mendetail dari setiap destinasi, interaksi <b>Virtual Reality</b> yang memungkinkan Anda berinteraksi dengan objek virtual di dunia nyata, <b>Pemandu Virtual</b> yang siap memberikan informasi dan sejarah setiap lokasi, <b>Aktivitas Interaktif</b> yang membuat pengalaman wisata lebih menarik dan mendidik, serta <b>Fitur Multibahasa</b> yang memastikan setiap orang dapat menikmati tur dalam bahasa pilihan mereka. Semua ini dirancang untuk memberikan pengalaman wisata yang kaya, mendalam, dan menghibur."</p>
+    <!-- <a href="#" class="selengkapnya">Selengkapnya >>></a> -->
+    <video autoplay muted loop id="video-bg">
+      <source src= "img/Wonderful.mp4" type="video/mp4">
+    </video>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="about-us">
+      <h1><span>Tentang</span> Kami</h1>
+      <div class="slider">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="slide" id="slide-container">
+          <div class="member">
+            <img src="img/zacky.jpeg" alt="Foto 1">
+            <div class="info">
+              <h2>Muhammad Zacky Alghifari</h2>
+              <h4>I.2310702</h4>
+            </div>
+          </div>
+          <div class="member">
+            <img src="img/syahrul2.jpeg" alt="Foto 2">
+            <div class="info">
+              <h2>Muhammad Syahrullah NS</h2>
+              <h4>I.2310691</h4>
+            </div>
+          </div>
+          <div class="member">
+            <img src="img/nayla.jpg" alt="Foto 3">
+            <div class="info">
+              <h2>Nayla Awalia Syafitri</h2>
+              <h4>I.2310537</h4>
+            </div>
+          </div>
+          <div class="member">
+            <img src="img/dzikri.jpeg" alt="Foto 4">
+            <div class="info">
+              <h2>M. Dzikri Ramdhani</h2>
+                      <h4>I.2310593</h4>
+                    </div>
+                  </div>
+                  <div class="member">
+                    <img src="img/hilmi.jpg" alt="Foto 5">
+                    <div class="info">
+                      <h2>Hilmi Ahmad Kamil</h2>
+                      <h4>I.2310740</h4>
+                    </div>
+                  </div>
+                  <div class="member">
+                    <img src="img/hilma.jpeg" alt="Foto 6">
+                    <div class="info">
+                      <h2>Hilma Hayati</h2>
+                      <h4>I.2310270</h4>
+                    </div>
+                  </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+              </div>
+            </div>
+          </section>
+
+<!-- Footer -->
+<footer style="
+  background-color: #0eabfa;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;">
+  <div class="socials">
+    <a href="https://instagram.com/himaster.unida" target="_blank"><i data-feather="instagram"></i></a>
+    <a href="https://wa.me/+6283168283392" target="_blank"><i data-feather="phone-call"></i></a>
+    <a href="https://shp.ee/ed9yfhi" target="_blank"><i data-feather="shopping-cart"></i></a>
+  </div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#about">Tentang Kami</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#contact">Kontak</a>
+  </div>
+  <div class="credit">
+    <p>Created by <a href="https://instagram.com/himaster.unida" target="_blank">Copilot Group</a> | Copyright &copy;2024 All Rights Reserved<br><br>Muhammad Zacky Alghifari - I.2310702<br>Muhammad Syahrullah Nursyaban - I.2310691<br>Nayla Awalia Syafitri - I.2310593<br>Muhammad Dzikri Ramdhani - I.2310740<br>Hilmi Ahmad Kamil - I.2310679<br>Hilma Hayati - I.2310270</p>
+  </div>
+</footer>
+
+<!-- Java Script -->
+<script>
+  feather.replace();
+</script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
