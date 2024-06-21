@@ -47,7 +47,6 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  font-family: 'Source Serif 4';
   color: #000;
 }
 
@@ -219,19 +218,29 @@ body {
   width: 100%;
 }
 
-.about .row .content {
+.about .row .content1 {
   flex: 1 1 35rem;
   padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.about .row .content2 {
+  flex: 1 1 35rem;
+  padding: 0 0 0 1rem;
+  display: flex;
   align-items: center;
 }
 
-  .about .row .content h3 {
+  .about .row .content1 h3, .about .row .content2 h3 {
     color: var(--primary);
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
   
-  .about .row .content p {
+  .about .row .content1 p, .about .row .content2 p {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
     font-weight: 300;
@@ -270,6 +279,18 @@ body {
   margin: auto;
   font-weight: 300;
   line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+.galeri .selengkapnya {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
 /* Contact Section */
@@ -328,11 +349,11 @@ body {
   background-color: var(--bg);
   cursor: pointer;
   border-radius: 15px;
-}
+} */
 
 /* Footer */
 footer {
-  background-color: var(--primary);
+  background-color: green;
   text-align: center;
   padding: 1rem 0 3rem;
   margin-top: 3rem;
@@ -367,8 +388,7 @@ footer .credit {
   color: #fff;
 }
 
-footer .credit p a {
-  color: black;
+footer .credit a {
   font-weight: 700;
 }
 
@@ -677,21 +697,35 @@ footer .credit p a {
     font-size: 1.6rem;
   }
 
-  .about .row .content h3 {
-    font-size: 1.8rem;
+  .about h2 {
+    font-size: 3rem;
   }
 
-  .about .row .content p {
+  .about .row .content1 {
     font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about .row .content2 p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .galeri h2 {
+    font-size: 3rem;
   }
 
   .galeri p,
   .contact p {
     font-size: 1.2rem;
   }
+  
+  .contact .about-us h1 {
+    font-size: 5rem;
+  }
 
   .contact .row form .input-group input {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .contact .row form .btn {
